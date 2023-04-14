@@ -4,9 +4,13 @@ import userRoutes from './routes/imovelRoutes.js'
 import clienteRoutes from './routes/clienteRoutes.js'
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.use(express.json())
+
+app.get('/', (req, res) => {
+    res.send('Olá mundo!')
+})
 
 db.sync(() => console.log('Database synced'))
 app.use('/imoveis', userRoutes)
