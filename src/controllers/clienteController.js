@@ -11,7 +11,7 @@ async function createCliente(req,res){
 }
 
 async function deleteCliente(req,res){
-    const cliente = await Cliente.destroy({where: {id: req.params.id}})
+    const cliente = await Cliente.destroy({where: {id_cliente: req.params.id_cliente}})
     res.json(cliente)
 }
 
@@ -19,7 +19,7 @@ async function updateCliente(req,res){
     const cliente = await Cliente.update(req.body,
         {
             where:{
-                id: req.params.id
+                id: req.params.id_cliente
             }
         }
     )
@@ -27,7 +27,7 @@ async function updateCliente(req,res){
 }
 
 async function getClienteById(req,res){
-    const cliente = await Cliente.findByPk(req.params.id)
+    const cliente = await Cliente.findByPk(req.params.id_cliente)
     res.json(cliente)
 }
 

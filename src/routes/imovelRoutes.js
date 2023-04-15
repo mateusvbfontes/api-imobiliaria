@@ -5,8 +5,8 @@ const router = express.Router()
 
 router.get('/', imovelController.getAllImoveis)
 router.post('/', imovelController.createImovel)
-router.delete('/:id',imovelController.deleteImovel)
-router.put('/:id',imovelController.updateImovel)
-router.get('/:id',imovelController.getImovelById)
+router.delete('/:id_imovel',imovelController.deleteImovel)
+router.put('/:id_imovel',imovelController.updateImovel)
+router.get('/:id_imovel',imovelController.getImovelById)
 
 export default router

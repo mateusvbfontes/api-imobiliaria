@@ -11,7 +11,7 @@ async function createImovel(req,res){
 }
 
 async function deleteImovel(req,res){
-    const imovel = await Imovel.destroy({where: {id: req.params.id}})
+    const imovel = await Imovel.destroy({where: {id_imovel: req.params.id_imovel}})
     res.json(imovel)
 }
 
@@ -19,7 +19,7 @@ async function updateImovel(req,res){
     const imovel = await Imovel.update(req.body,
         {
             where:{
-                id: req.params.id
+                id_imovel: req.params.id_imovel
             }
         }
     )
@@ -27,7 +27,7 @@ async function updateImovel(req,res){
 }
 
 async function getImovelById(req,res){
-    const imovel = await Imovel.findByPk(req.params.id)
+    const imovel = await Imovel.findByPk(req.params.id_imovel)
     res.json(imovel)
 }
 
