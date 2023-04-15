@@ -1,0 +1,7 @@
+{
+  "id_cliente": 1,
+  "nome_cliente": "John Doe",
+  "email": "john.doe@gmail.com",
+  "telefone": "(19) 99999-9999",
+  "senha": "1234"
+}
