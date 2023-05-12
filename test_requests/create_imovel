@@ -1,0 +1,12 @@
+{
+  "id_imovel": 2,
+  "titulo": "Apartamento para alugar Cidade Nova",
+  "tipo": "Apartamento",
+  "cidade": "Sumaré",
+  "bairro": "Cidade Nova",
+  "venda": false,
+  "aluguel": true,
+  "num_quartos": 2,
+  "area_m2": 125,
+  "valor": 2200
+}
