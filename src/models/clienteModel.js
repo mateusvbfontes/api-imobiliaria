@@ -1,7 +1,8 @@
 import { Sequelize } from "sequelize"
 import db from "../db.js"
+import postgre_db from "../postgredb.js"
 
-const Cliente = db.define("cliente",{
+const Cliente = postgre_db.define("cliente",{
     id_cliente: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
